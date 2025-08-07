@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenThumb 🌿</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="header">
+  <div class="top-bar">
+   <div class="top-bar-container">
+    
+     <!-- Logo -->
+     <div class="logo">
+       <span class="logo-icon">🌿</span>
+       <span class="logo-text">GreenThumb</span>
+     </div>
+
+     <!-- Search -->
+     <div class="search-container">
+       <i class="fas fa-search search-icon"></i>
+       <input type="text" placeholder="Search for plants..." class="search-input" />
+     </div>
+
+     <!-- Icons -->
+     <div class="icons">
+       <a href="#"><i class="fas fa-heart" style="color: black;"></i></a>
+       <a href="#" class="cart-icon">
+         <i class="fas fa-shopping-cart"></i>
+         <span class="cart-count">0</span>
+       </a>
+     </div>
+
+   </div>
+ </div>
+
+    <nav class="mobile-menu" id="mobile-menu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#category" class="mobile-link">Category</a>
+      <a href="#product" class="mobile-link">Products</a>
+      <a href="#deal" class="mobile-link">Deals</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide" style="background-image: url('plant10.webp');">
+          <div class="slide-content">
+            <h2>Welcome to GreenThumb</h2>
+            <br>
+            <p>Discover the beauty of nature in your home.</p>
+            <a href="#product" class="btn">Shop Now</a>
+          </div>
+        </div>
+        <div class="swiper-slide slide" style="background-image: url('plant11.webp');">
+          <div class="slide-content">
+            <h2>Indoor Plants Collection</h2>
+            <br>
+            <p>Bring freshness and life to your space.</p>
+            <a href="#category" class="btn">Browse</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Section -->
+  <section id="category" class="category-section">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="categories">
+      <div class="category-card">Indoor</div>
+      <div class="category-card">Outdoor</div>
+      <div class="category-card">Succulents</div>
+      <div class="category-card">Flowering</div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="product" class="product-section">
+    <h2 class="section-title">Popular Plants</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="plant1.webp" alt="Aloe Vera" />
+        <h3>Aloe Vera</h3>
+        <p>₹199</p>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="plant2.avif" alt="Snake Plant" />
+        <h3>Snake Plant</h3>
+        <p>₹249</p>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="plant3.jpg" alt="Peace Lily" />
+        <h3>Peace Lily</h3>
+        <p>₹299</p>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="plant4.webp" alt="Chrismas Tree" />
+        <h3>Chrismas Tree</h3>
+        <p>₹499</p>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="plant5.jpeg" alt="Heliconia" />
+        <h3>Heliconia</h3>
+        <p>₹759</p>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="plant6.jpg" alt="Bougainvillea " />
+        <h3>Bougainvillea </h3>
+        <p>₹569</p>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="plant7.jpeg" alt="Haworthia" />
+        <h3>Haworthia</h3>
+        <p>₹289</p>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="plant8.jpeg" alt="Echeveria" />
+        <h3>Echeveria</h3>
+        <p>₹139</p>
+        <button class="buy-btn">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="plant9.jpeg" alt="Dahlia" />
+        <h3>Dahlia</h3>
+        <p>₹639</p>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deal Section -->
+  <section id="deal" class="deal-section">
+    <h2 class="section-title">Limited Time Deal</h2>
+    <div class="deal-box">
+      <h3>Special Offer on Combo Pack</h3>
+      <div class="countdown" id="countdown">
+        <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+      </div>
+      <a href="#product" class="btn">Grab Deal</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+ <section id="contact" class="contact-section">
+   <h2 class="section-title">Get in Touch</h2>
+   <div class="contact-form-container">
+     <form class="contact-form">
+       <div class="form-group">
+         <input type="text" placeholder="Your Name" name="name" required />
+         <input type="email" placeholder="your@example.com" name="email" required />
+       </div>
+       <textarea placeholder="Your message..." name="message" rows="5" required></textarea>
+       <button type="submit" class="btn">Send Message</button>
+     </form>
+   </div>
+ </section>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">🌿 GreenThumb</div>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Shipping</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 GreenThumb. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
